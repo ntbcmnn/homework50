@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+    <link rel="stylesheet" href="01.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<div id="app" class="container"></div>
+
+<script type="text/babel">
+    const movies =
+        [
+            {
+                name: "Отпуск по обмену",
+                year: 2006,
+                picture: "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/185b0c9f-d07a-4529-b023-cdb20eceb18a/600x900"
+            },
+            {
+                name: "Тайна Коко",
+                year: 2017,
+                picture: "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/6e11a16e-c9e7-491f-9162-01098a7d8dd9/600x900"
+            },
+            {
+                name: "Форрест Гамп",
+                year: 1994,
+                picture: "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/3560b757-9b95-45ec-af8c-623972370f9d/600x900"
+            }
+        ];
+
+    const Movie = (props) => {
+        return (
+            <div className="movie">
+                <img className="movie-img" src={props.picture} alt={props.name}/>
+                <p className="movie-name">{props.name}</p>
+                <p className="movie-year">Дата выхода: {props.year} г.</p>
+            </div>
+        );
+    };
+
+    const content = movies.map((movie, index) => {
+        return (
+            <Movie key={index} name={movie.name} year={movie.year} picture={movie.picture}/>
+        );
+    });
+
+    ReactDOM.createRoot(document.getElementById('app')).render(content);
+</script>
+</body>
+</html>
