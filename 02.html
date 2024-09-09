@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="02.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<div id="app"></div>
+
+<script type="text/babel">
+    const Header = () => {
+        return (
+            <div className="header">
+                <div className="header-container">
+                    <a href="#" className="logo">
+                        <img src={"https://www.svgrepo.com/show/488741/airplane.svg"}
+                             alt="Plane"/>
+                    </a>
+                    <div className="header-links">
+                        <a href="#">About</a>
+                        <a href="#">Book tickets</a>
+                        <a href="#">Questions</a>
+                    </div>
+                    <a href="#" className="header-btn">Cart</a>
+                </div>
+            </div>
+        );
+    };
+
+    const Navbar = () => {
+        return (
+            <div className="navigation">
+                <ul className="nav-list">
+                    <a href="#">
+                        <li>Lorem</li>
+                    </a>
+                    <a href="#">
+                        <li>Ipsum</li>
+                    </a>
+                    <a href="#">
+                        <li>Dolor</li>
+                    </a>
+                    <a href="#">
+                        <li>Sit</li>
+                    </a>
+                    <a href="#">
+                        <li>Amet</li>
+                    </a>
+                    <a href="#">
+                        <li>Consectetur</li>
+                    </a>
+                    <a href="#">
+                        <li>Adipisicing</li>
+                    </a>
+                    <a href="#">
+                        <li>Elit</li>
+                    </a>
+                    <a href="#">
+                        <li>Beatae</li>
+                    </a>
+                    <a href="#" className="nav-link">
+                        <li>Minima</li>
+                    </a>
+                </ul>
+            </div>
+        );
+    };
+
+    const Content = () => {
+        return (
+            <div className="content">
+                <h1 className="content-heading">Why should you not be scared to travel by plane?</h1>
+                <div className="content-wrap">
+                    <div className="content-card">
+                        <img src={"https://i.pinimg.com/564x/9a/2a/e6/9a2ae6eb457352be7f2c841f258f218b.jpg"}
+                             alt="Travelling"/>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam distinctio dolores eos
+                            et
+                            iusto,
+                            laudantium minima natus nobis, nulla optio perspiciatis porro praesentium quas sunt?
+                        </p>
+                        <a href="#">Read more</a>
+                    </div>
+
+                    <div className="content-card">
+                        <img src={"https://i.pinimg.com/564x/33/33/53/3333531074d998acdaa429127e8c340b.jpg"}
+                             alt="Travelling"/>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore facilis illo magnam
+                            tempora
+                            voluptas. Accusantium cumque dolore eaque earum facere iusto laudantium natus, placeat
+                            praesentium
+                            quas quasi tempore tenetur vero.
+                        </p>
+                        <a href="#">Read more</a>
+                    </div>
+
+                    <div className="content-card">
+                        <img src={"https://i.pinimg.com/564x/b3/49/27/b349275bc372e5022a29863b4b355acc.jpg"}
+                             alt="Travelling"/>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci culpa debitis
+                            deserunt
+                            enim
+                            eveniet ipsum iusto, molestiae perspiciatis provident quibusdam reprehenderit sapiente,
+                            tenetur
+                            voluptas. Animi, architecto, suscipit!
+                        </p>
+                        <a href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+        );
+    };
+
+    const Footer = () => {
+        return (
+            <div className="footer">
+                <div className="footer-container">
+                    <p>Travel safe with us</p>
+                    <a href="#" className="logo">
+                        <img src={"https://www.svgrepo.com/show/488741/airplane.svg"}
+                             alt="Plane"/>
+                    </a>
+                    <p>&copy;Lorem ipsum, 2024</p>
+                </div>
+            </div>
+        );
+    };
+
+    const page = (
+        <div>
+            <Header/>
+            <div className="container">
+                <Navbar/>
+                <Content/>
+            </div>
+            <Footer/>
+        </div>
+    );
+
+    ReactDOM.createRoot(document.getElementById('app')).render(page);
+
+</script>
+</body>
+</html>
