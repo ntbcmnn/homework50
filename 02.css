@@ -2,10 +2,10 @@ body {
     font-family: "SUSE", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;;
-    padding: 0;
-    margin: 0;
     color: black;
     font-size: 16px;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -14,19 +14,19 @@ a {
 }
 
 .container {
-    padding: 0 20px;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 40px;
     align-items: center;
+    gap: 40px;
     margin-bottom: 200px;
+    padding: 0 20px;
 }
 
 .header {
-    border-bottom: 1px solid black;
-    border-radius: 0 0 10px 10px;
     padding: 15px 30px;
     margin: 0 0 70px;
+    border-bottom: 1px solid black;
+    border-radius: 0 0 10px 10px;
 }
 
 .header-container {
@@ -54,27 +54,27 @@ a {
 }
 
 .header-btn {
-    font-family: inherit;
     border: none;
     border-radius: 5px;
     background: black;
-    color: white;
     padding: 10px 15px;
-    cursor: pointer;
+    font-family: inherit;
     font-weight: bold;
+    color: white;
+    cursor: pointer;
 }
 
 .header-btn:hover {
     background: white;
+    padding: 8px 13px;
     color: black;
     border: 2px solid black;
-    padding: 8px 13px;
 }
 
 .navigation {
+    padding: 30px 20px;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 30px 20px;
 }
 
 .nav-list {
@@ -151,9 +151,9 @@ a {
 }
 
 .footer {
+    padding: 15px 30px;
     border-top: 1px solid black;
     border-radius: 10px 10px 0 0;
-    padding: 15px 30px;
 }
 
 .footer-container {
